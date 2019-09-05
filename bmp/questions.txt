@@ -1,0 +1,54 @@
+0.  BMP supports up to 4,294,967,296 distinct colours at 32bpp.
+    JPEG supports up to 16 million distinct colours at 24bpp.
+    PNG supports up to 281,474,976,710,656 distinct colours at 48bpp.
+    GIF supports up to 256 distinct colours at 8bpp.
+    
+1.  Only GIF supports animation.
+
+2.  Lossy, or irreversable compression uses inexact approximations and partial data discarding,
+    which results in data being lost after compression, allowing for a smaller file size. 
+    Lossless, or reversable compression on the other hand, maintains all original data, losing none.
+    
+3.  only JPEG files are lossy compressed.
+
+4.  When a file is deleted on a FAT system, first, the system changes the filenames first character
+    to signify the file has been deleted and can be recycled, and then the system moves all the 
+    files FAT clusters to the harddrives list of free clusters.
+    
+5.  To ensure files cannot be recovered, one can degauss the harddrive, destroy the harddrive,  
+    or overwrite all memory in the harddrive with random information, or all NULL zeroes.
+    
+6.  stdint.h is a header file which provides a set of typedefs which specify exact-width variables, 
+    together with the defined minimum and maximum allowable values for each type,
+    allowing for increased portability across different systems.
+    
+7.  The point of using uint8_t, uint32_t, int32_t, and uint16_t in a program is so that no matter 
+    what system the code runs on, it gives you an integer of a predefined size. uint8_t is an
+    unsigned 8 bit integer, uint32_t is an unsigned 32 bit integer, int32_t is a signed 32 bit integer,
+    and uint16_t is an unsigned 16 bit integer.
+    
+8.  BYTE is 1 byte
+    DWORD is 4 bytes,
+    LONG is 4 bytes,
+    WORD is 2 bytes
+    
+9.  the first two bytes in a BMP file are BM in ASCII, or 0x42 0x4D in HEX.
+
+10. biSize is the number of bytes required by the structure, while bfSize is the size
+    in bytes of the bitmap file.
+    
+11. if biHeight is negative, it indicated a top-down DIB with its origin in the upper left corner.
+    
+12. biBitCount specifies the bpp, or bits-per-pixel.
+
+13. fopen may return NULL if it cant find the file, or runs out of memory.
+
+14. the third argument of fread is always 1 because we are only reading one element at a time.
+
+15. 3
+
+16. fseek sets the position indicator to a new position, offsets the position of the stream by 3 bytes.
+
+17. seek_CUR means the offset is based from the current position of the stream.
+
+18. It's Rick Astley.
